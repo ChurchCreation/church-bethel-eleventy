@@ -1,0 +1,11 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   BETHEL — the pieces only this template has.
+
+   One rule. The house style is families/_chrome-editorial.css, the chapel's
+   paint and type are families/chapel.css, and the service board, numbered
+   shape and enquiry form are shared furniture.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* Newsreader's italic is genuinely narrow, so the register's one turning line
+   needs a touch more room than the shared chrome gives it. */
+.welcome__turn { letter-spacing: -0.005em; }

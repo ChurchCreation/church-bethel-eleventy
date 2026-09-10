@@ -1,0 +1,258 @@
+/* ═══════════════════════════════════════════════════════════════════════════
+   FAMILY — CHAPEL
+   Baptist · Independent Evangelical · Free Church · Brethren · anywhere the
+   sermon is the centre of the hour and baptism means immersion.
+
+   Built on families/_chrome-editorial.css and bringing only its own tokens.
+
+   Note this is the SECOND template in the system for roughly this tradition —
+   Plainsong serves it as a bound book. That is deliberate: a tradition is not
+   a look, and a congregation that finds Plainsong's letterpress too austere
+   should have somewhere else to go without leaving the house style.
+
+   ── WHAT MAKES IT A CHAPEL ────────────────────────────────────────────────
+   A COOL ground. Every other family on this register is warm — ivory,
+   limewash, oat, paper — and a nonconformist chapel is whitewash and clear
+   glass, not candlelight. Measured: the eight grounds in use sit at hue 85–146
+   with one at 275; this one is a cool blue-grey and is the only one of its
+   kind, which is what stops nine templates reading as one.
+
+   Slate blue for the accent — the colour of a painted gallery front and a
+   hymn board — measured at 37° from the nearest of the eight accents in use,
+   the widest gap left on the circle.
+
+   Newsreader for display: plain, sturdy, slightly old-style. Not a cathedral
+   face and not trying to be.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+:root,
+:root[data-theme="light"] {
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body:    "Libre Franklin", ui-sans-serif, -apple-system, "Segoe UI", sans-serif;
+  --font-ui:      "Libre Franklin", ui-sans-serif, -apple-system, "Segoe UI", sans-serif;
+  --display-weight: 400;
+
+  --paper-050: #FBFCFC;
+  --paper-100: #F6F8F8;   /* the only COOL ground in the set */
+  --slate-200: #E7ECEC;   /* first tint  — cool  */
+  --sand-200:  #F0EDE6;   /* second tint — warm, for contrast against it */
+  --line-200:  #D5DCDC;
+  --ink-600:   #525A5C;
+  --ink-800:   #2B3234;
+  --ink-900:   #1A1F21;
+
+  --slate:      #33456E;
+  --slate-deep: #1D2A3F;
+  --slate-lift: #9DB2D4;   /* only ever used ON the deep panel */
+
+  --tint-1:        var(--slate-200);
+  --tint-1-raised: var(--paper-050);
+  --tint-1-sunken: #DBE3E3;
+  --tint-2:        var(--sand-200);
+  --tint-2-raised: var(--paper-050);
+  --tint-2-sunken: #E6E1D5;
+
+  --bg:          var(--paper-100);
+  --bg-raised:   var(--paper-050);
+  --bg-sunken:   var(--slate-200);
+  --fg:          var(--ink-900);
+  --fg-muted:    var(--ink-600);
+  --line:        var(--line-200);
+  --line-strong: var(--ink-800);
+
+  --bg-invert:    var(--slate-deep);
+  --fg-invert:    #E8EDF4;
+  --line-invert:  #35455C;
+  --muted-invert: #A6B4C6;
+
+  --accent:      var(--slate);
+  --accent-fg:   #FFFFFF;
+
+  --t-xs:   0.75rem;
+  --t-sm:   0.8125rem;
+  --t-base: 1.0625rem;
+  --t-md:   1.1875rem;
+  --t-lg:   clamp(1.35rem, 1.1rem + 1.1vw, 1.7rem);
+  --t-xl:   clamp(1.8rem,  1.35rem + 2vw,  2.7rem);
+  --t-2xl:  clamp(2.3rem,  1.6rem + 3.4vw, 3.8rem);
+  --t-3xl:  clamp(2.8rem,  1.8rem + 5vw,   4.6rem);
+
+  --leading-tight: 1.06;
+  --leading-snug:  1.3;
+  --leading-body:  1.68;
+
+  --tracking-label: 0.14em;
+  --tracking-display: -0.018em;
+
+  --measure:      34rem;
+  --measure-wide: 46rem;
+  --court:        74rem;
+  --gutter:       clamp(1.25rem, 5vw, 4rem);
+
+  --radius:      0;
+  --radius-arch: 0;
+  --shadow:      none;
+
+  --hair:  1px solid var(--line);
+  --border:        var(--hair);
+  --border-strong: 1px solid var(--line-strong);
+
+  --focus: 2px solid var(--slate);
+  --focus-offset: 3px;
+}
+
+/* ── Dark ───────────────────────────────────────────────────────────────── */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper-050: #191E20;
+    --paper-100: #121618;
+    --slate-200: #1B2225;
+    --sand-200:  #201E1A;
+    --line-200:  #2F3739;
+    --ink-600:   #9AA5A8;
+    --ink-800:   #CBD3D5;
+    --ink-900:   #E7EDEE;
+
+    --slate:      #93AEDC;
+    --slate-deep: #0D1319;
+    --slate-lift: #B6C8E6;
+
+    --tint-1:        var(--slate-200);
+    --tint-1-raised: var(--paper-050);
+    --tint-1-sunken: #232B2E;
+    --tint-2:        var(--sand-200);
+    --tint-2-raised: var(--paper-050);
+    --tint-2-sunken: #2A2622;
+
+    --bg:          var(--paper-100);
+    --bg-raised:   var(--paper-050);
+    --bg-sunken:   var(--slate-200);
+    --fg:          var(--ink-900);
+    --fg-muted:    var(--ink-600);
+    --line:        var(--line-200);
+    --line-strong: var(--ink-800);
+    --accent:      var(--slate);
+    --accent-fg:   #0D1319;
+
+    --bg-invert:    var(--slate-deep);
+    --fg-invert:    #E7EDEE;
+    --line-invert:  #232C33;
+    --muted-invert: #93A0A5;
+    --shadow:       none;
+  }
+}
+:root[data-theme="dark"] {
+  --paper-050: #191E20;
+  --paper-100: #121618;
+  --slate-200: #1B2225;
+  --sand-200:  #201E1A;
+  --line-200:  #2F3739;
+  --ink-600:   #9AA5A8;
+  --ink-800:   #CBD3D5;
+  --ink-900:   #E7EDEE;
+
+  --slate:      #93AEDC;
+  --slate-deep: #0D1319;
+  --slate-lift: #B6C8E6;
+
+  --tint-1:        var(--slate-200);
+  --tint-1-raised: var(--paper-050);
+  --tint-1-sunken: #232B2E;
+  --tint-2:        var(--sand-200);
+  --tint-2-raised: var(--paper-050);
+  --tint-2-sunken: #2A2622;
+
+  --bg:          var(--paper-100);
+  --bg-raised:   var(--paper-050);
+  --bg-sunken:   var(--slate-200);
+  --fg:          var(--ink-900);
+  --fg-muted:    var(--ink-600);
+  --line:        var(--line-200);
+  --line-strong: var(--ink-800);
+  --accent:      var(--slate);
+  --accent-fg:   #0D1319;
+
+  --bg-invert:    var(--slate-deep);
+  --fg-invert:    #E7EDEE;
+  --line-invert:  #232C33;
+  --muted-invert: #93A0A5;
+  --shadow:       none;
+}
+
+/* ═══ The welcome ════════════════════════════════════════════════════════ */
+.welcome { background: var(--slate-deep); }
+.welcome__eyebrow { color: var(--slate-lift); }
+.welcome__lede    { color: #DCE4EE; }
+.welcome__turn    { color: var(--slate-lift); }
+.welcome .btn {
+  background: var(--slate-lift);
+  border-color: var(--slate-lift);
+  color: #16202C;
+}
+.welcome .btn:hover { background: #B6C8E6; border-color: #B6C8E6; }
+
+/* ═══ The pool ═══════════════════════════════════════════════════════════
+   THE SIGNATURE COMPONENT. Believer's baptism by immersion is the thing that
+   makes this tradition itself, and it is the question people circle for
+   months without asking — so it gets a panel that answers the practical
+   worries rather than the theological ones, which are the worries that
+   actually stop people.
+
+   The next date is stated, because "speak to one of the elders" is not an
+   answer to somebody working up to it alone. */
+.pool {
+  display: grid;
+  gap: clamp(var(--s-5), 4vw, var(--s-7));
+  padding: clamp(var(--s-6), 5vw, var(--s-8));
+  background: var(--bg-raised);
+  border-block-start: 3px solid var(--slate);
+  border-block-end: var(--hair);
+}
+@media (min-width: 52rem) { .pool { grid-template-columns: 5fr 7fr; } }
+.pool__next {
+  font-family: var(--font-display);
+  font-size: var(--t-xl);
+  line-height: 1.1;
+}
+.pool__when {
+  display: block;
+  margin-block-start: var(--s-2);
+  font-family: var(--font-ui);
+  font-size: var(--t-sm);
+  color: var(--fg-muted);
+}
+.pool__say p + p { margin-block-start: var(--s-4); }
+.pool__say b { font-weight: 600; }
+
+/* ═══ The series ═════════════════════════════════════════════════════════
+   A chapel preaches through a book over months, and where you are in it is
+   real information — a visitor arriving at week nine of Romans is walking
+   into a conversation. Stated plainly rather than buried in a sermon list. */
+.series {
+  display: grid;
+  gap: var(--s-5);
+  align-items: baseline;
+  padding-block: var(--s-6);
+  border-block: var(--hair);
+}
+@media (min-width: 44rem) { .series { grid-template-columns: 1fr auto; } }
+.series__book { font-family: var(--font-display); font-size: var(--t-xl); }
+.series__where {
+  font-family: var(--font-ui);
+  font-size: var(--t-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-label);
+  color: var(--accent);
+}
+.series__note {
+  grid-column: 1;
+  font-family: var(--font-ui);
+  font-size: var(--t-sm);
+  color: var(--fg-muted);
+  max-inline-size: 46ch;
+}
+
+@media (forced-colors: active) {
+  .pool { border: 1px solid CanvasText; }
+}

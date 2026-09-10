@@ -1,0 +1,110 @@
+---
+layout: base.njk
+title: "New here — Bethel Baptist Church, Ashwell"
+description: "What a Sunday at Bethel is like, where to park, where to sit, and what nobody will ask of you."
+permalink: /visit.html
+current: visit.html
+---
+<main id="main">
+
+  <section class="lintel">
+    <div class="court">
+      <h1 data-enter style="--i:0">Coming for the first time</h1>
+      <hr class="lintel__rule" data-enter-rule style="--i:0">
+      <p data-enter style="--i:1">Plainer than you are probably expecting. No robes, no liturgy, nothing to join in with unless you want to.</p>
+    </div>
+  </section>
+
+
+  <section class="setting" data-reveal>
+    <div class="court">
+      <div class="courses">
+        <div class="course">
+          <span class="course__numeral" aria-hidden="true">I</span>
+          <h3 class="course__name">Getting here</h3>
+          <p>Chapel Street, opposite the school. Twelve spaces in the chapel car park and unrestricted parking on the street on a Sunday.</p>
+          <a class="course__more" href="#" data-church-href="@maps">Open in maps <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-up-right"/></svg></a>
+        </div>
+        <div class="course">
+          <span class="course__numeral" aria-hidden="true">II</span>
+          <h3 class="course__name">Walking in</h3>
+          <p>One door, and somebody on it who will say hello, hand you a sheet, and then let you get on with it. Coffee is straight ahead in the hall.</p>
+        </div>
+        <div class="course">
+          <span class="course__numeral" aria-hidden="true">III</span>
+          <h3 class="course__name">Where to sit</h3>
+          <p>Anywhere. The back half fills first, as everywhere. The gallery is quiet and nobody will look at you up there.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="setting setting--tint" data-reveal>
+    <div class="court">
+      <div class="setting__head"><h2>Things people worry about beforehand</h2></div>
+      <div class="questions">
+        <details class="question">
+          <summary>I have never been to a church like this.</summary>
+          <div><p>Then you will find it plainer than you expect. No robes, no liturgy, no responses to join in with. Songs, prayers, and a long talk about a passage.</p></div>
+        </details>
+        <details class="question">
+          <summary>I am not a Christian.</summary>
+          <div><p>Come anyway. Nothing on a Sunday requires you to say or sing anything you do not mean, and a fair number of people here spent a year or two in exactly that position first.</p></div>
+        </details>
+        <details class="question">
+          <summary>Will somebody try to convert me?</summary>
+          <div><p>Somebody will preach, which is what you came to hear. Nobody will corner you over coffee — and if they do, tell one of the elders, because we would want to know.</p></div>
+        </details>
+        <details class="question">
+          <summary>Can I just listen online first?</summary>
+          <div><p>Yes, and a lot of people do for months. Every sermon is on the site by Monday evening.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="setting setting--tint2" data-reveal>
+    <div class="court">
+      <div class="setting__head"><h2>Tell us you are coming</h2><p>Optional, and it is not a booking.</p></div>
+      <div class="invitation__grid">
+        <div class="invitation__aside">
+          <p>The office is staffed on Tuesday and Thursday mornings, and one of the elders picks up the phone the rest of the time.</p>
+          <dl>
+            <dt>Telephone</dt><dd><a href="#" data-church-href="@tel" data-church="phone">&nbsp;</a></dd>
+            <dt>Email</dt><dd><a href="#" data-church-href="@email" data-church="email">&nbsp;</a></dd>
+            <dt>In person</dt><dd data-church="@address">&nbsp;</dd>
+          </dl>
+        </div>
+        <form class="invitation__form" method="post" action="#">
+          <div class="form-grid">
+            <div>
+              <label for="f-name">Your name <span class="req">(required)</span></label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div>
+              <label for="f-email">Email <span class="req">(required)</span></label>
+              <input id="f-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="form-field--full">
+              <label for="f-about">What is it about?</label>
+              <select id="f-about" name="about">
+                <option>Coming on a Sunday</option>
+                <option>Baptism</option>
+                <option>Joining a group</option>
+                <option>Becoming a member</option>
+                <option>A wedding or a funeral</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="form-field--full">
+              <label for="f-msg">Message</label>
+              <textarea id="f-msg" name="message"></textarea>
+            </div>
+          </div>
+          <p style="margin-block-start:var(--s-5)"><button class="btn" type="submit">Send <svg class="icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg></button></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
