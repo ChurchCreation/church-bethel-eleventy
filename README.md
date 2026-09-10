@@ -1,6 +1,6 @@
 # Bethel — a free church website template for Eleventy
 
-A Baptist church in Ashwell. Two services on a Sunday, groups through the week, baptism by immersion. Currently preaching through Romans.
+A free website template for evangelical, Baptist and independent churches. Built around the questions a first-time visitor actually asks — what happens on a Sunday, what to expect, what the church believes — with pages for baptism, small groups and a preaching series. Editorial layout, self-hosted typefaces, dark mode, and no external requests.
 
 **[Live demo](https://churchcreation.com/demo/bethel/)** · **[About this template](https://churchcreation.com/templates/bethel/)** · 8 pages · MIT
 
